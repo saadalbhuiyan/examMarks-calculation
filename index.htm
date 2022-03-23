@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: monospace;
+        }
+        body{
+            background-image: url(img/background.jpg);
+            background-size: cover;
+            background-repeat: repeat;
+        
+        }
+        .main{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            flex-direction: column;
+            /* background-color: aquamarine; */
+         }
+        
+         .coundown-head h1{
+             font-size: 3rem;
+         }
+         .coundown-body{
+             display: flex;
+             
+         }
+         .coundown-body > div{
+             text-align: center;
+             background-color: aquamarine;
+             margin: 1.5rem;
+         }
+         .coundown-body > div > h1 {
+             font-size: 3rem;
+         }
+         .coundown-body > div > span{
+             font-size: 1.5rem;
+         }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="coundown-head">
+        <h1>Weeding Left</h1>
+        </div>
+        <div class="coundown-body">
+            <!-- for days -->
+            <div class="daysDiv">
+                <h1 id="days">00</h1>
+                <span>Total days</span>
+            </div>
+            <!-- for hours -->
+            <div class="hoursDiv">
+                <h1 id="hours">00</h1>
+                <span>Total hours</span>
+            </div>
+            <!-- for minutes -->
+            <div class="minutesDiv">
+                <h1 id="minutes">00</h1>
+                <span>Total minutes</span>
+            </div>
+            <!-- for seconds -->
+            <div class="secondsDiv">
+                <h1 id="seconds">00</h1>
+                <span>Total seconds</span>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
